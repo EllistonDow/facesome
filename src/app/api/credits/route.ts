@@ -1,10 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
+import { getUserCredits } from "@/lib/cloudflare/d1";
 
 export async function GET(req: NextRequest) {
-  // Demo credit balance endpoint (can be connected to Supabase Auth & PostgreSQL)
+  // Obtain userId from cookie or query param (defaulting to demo session)
+  const userId = req.nextUrl.searchParams.get("userId") || "demo-user";
+  const credits = await getUserCredits(userId);
+
   return NextResponse.json({
-    balance: 100,
-    lifetimeUsed: 40,
+    userId: credits.userId,
+    balance: credits.balance,
+    lifetimeUsed: credits.lifetimeUsed,
     tier: "executive",
   });
 }

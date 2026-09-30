@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { HEADSHOT_STYLES } from "@/lib/constants/styles";
 import { Sparkles, ArrowRight, Check, Camera, Briefcase } from "lucide-react";
 
@@ -117,13 +116,13 @@ export default function StyleShowcase() {
 
               {/* Action Button */}
               <div className="pt-2">
-                <Link
+                <a
                   href={`/headshots?style=${activeStyle.id}`}
                   className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#dfb86c] to-[#c7983c] px-6 py-3 text-xs font-semibold text-black shadow-lg shadow-amber-500/20 hover:shadow-amber-500/35 transition-all"
                 >
                   <span>Select & Generate in This Style</span>
                   <ArrowRight className="h-3.5 w-3.5" />
-                </Link>
+                </a>
               </div>
             </div>
           </div>

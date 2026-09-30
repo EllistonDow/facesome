@@ -1,4 +1,4 @@
-import { HeadshotStyle, FeatureModule } from "@/types";
+import type { HeadshotStyle, FeatureModule } from "@/types";
 
 export const FEATURE_MODULES: FeatureModule[] = [
   {

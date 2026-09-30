@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ResultPhoto } from "@/types";
+import type { ResultPhoto } from "@/types";
 import {
   Download,
   Share2,

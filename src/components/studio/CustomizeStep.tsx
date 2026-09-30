@@ -1,7 +1,7 @@
 "use client";
 
 import { HEADSHOT_STYLES } from "@/lib/constants/styles";
-import { StyleGender } from "@/types";
+import type { StyleGender } from "@/types";
 import { Sparkles, Check, Info } from "lucide-react";
 
 interface CustomizeStepProps {

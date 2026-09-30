@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import {
   Sparkles,
   ArrowRight,
@@ -62,20 +61,20 @@ export default function HeroSection() {
 
             {/* Primary Action Row */}
             <div className="mt-8 flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-              <Link
+              <a
                 href="/headshots"
                 className="group relative flex w-full sm:w-auto items-center justify-center gap-2.5 rounded-full bg-gradient-to-r from-[#dfb86c] via-[#f0cf85] to-[#c7983c] px-7 py-3.5 text-sm font-semibold text-black shadow-xl shadow-amber-500/20 transition-all duration-300 hover:scale-[1.02] hover:shadow-amber-500/35"
               >
                 <span>Generate My Executive Portraits</span>
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Link>
+              </a>
 
-              <Link
+              <a
                 href="#styles"
                 className="flex w-full sm:w-auto items-center justify-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-6 py-3.5 text-sm font-medium text-zinc-200 hover:bg-white/[0.08] hover:text-white transition-all"
               >
                 <span>View Style Catalog</span>
-              </Link>
+              </a>
             </div>
 
             {/* Trust footer stats */}

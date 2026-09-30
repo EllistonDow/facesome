@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/marketing/HeroSection';
+import StyleShowcase from '../components/marketing/StyleShowcase';
+import ComparisonTable from '../components/marketing/ComparisonTable';
+import PricingSection from '../components/marketing/PricingSection';
+import FAQSection from '../components/marketing/FAQSection';
+---
+
+<Layout
+  title="Facesome.com — Bespoke AI Executive Headshots & LinkedIn Portrait Atelier"
+  description="Craft bespoke 4K LinkedIn headshots and executive portraits in 60 seconds with studio optical fidelity and zero egress storage."
+>
+  <HeroSection client:load />
+  <StyleShowcase client:load />
+  <ComparisonTable client:load />
+  <PricingSection client:load />
+  <FAQSection client:load />
+</Layout>

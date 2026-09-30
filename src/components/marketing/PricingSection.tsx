@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { PRICING_PLANS } from "@/lib/constants/pricing";
 import { Check, Sparkles, Shield, ArrowRight } from "lucide-react";
 
@@ -91,7 +90,7 @@ export default function PricingSection() {
 
                 {/* Bottom CTA Button */}
                 <div className="mt-8 pt-4">
-                  <Link
+                  <a
                     href={`/headshots?plan=${plan.id}`}
                     className={`flex w-full items-center justify-center gap-2 rounded-xl py-3 text-xs font-semibold transition-all ${
                       isPopular
@@ -101,7 +100,7 @@ export default function PricingSection() {
                   >
                     <span>{plan.cta}</span>
                     <ArrowRight className="h-3.5 w-3.5" />
-                  </Link>
+                  </a>
 
                   <div className="mt-3 flex items-center justify-center gap-1 text-[11px] text-zinc-500">
                     <Shield className="h-3 w-3 text-zinc-500" />
